@@ -1,0 +1,17 @@
+
+
+:host {
+  display: block;
+  height: 130px;
+  min-width: 220px;
+  max-width: 260px;
+  width: 220px;
+  padding: 16px;
+
+
+  :first-child {
+    background-color: #673ab7;
+    color: #fff;
+  }
+}
+

@@ -1,0 +1,58 @@
+@import '~@angular/material/theming';
+
+
+.mat-toolbar-single-row {
+  position: relative;
+  padding: 0 24px;
+
+  .menu-icon {
+    position: relative;
+    margin-right: 0;
+
+    .mat-icon {
+      font-size: 29px;
+      padding: 0 5px 0 0;
+    }
+  }
+
+  a {
+    margin-left: 24px;
+  }
+
+  h2 {
+    margin: auto;
+  }
+
+  .app-logo {
+    position: relative;
+    height: 32px;
+    vertical-align: middle;
+    margin-top: -3px;
+  }
+
+  .app-title {
+    cursor: pointer;
+    letter-spacing: -0.3px;
+    font-weight: 100;
+    margin-left: auto;
+  }
+
+  .toolbar-divider {
+    margin: 0 5px;
+
+    & > div {
+      /* background-color: mat-color($background, card, 1); */
+    }
+  }
+
+  .header-delimiter {
+    height: 24px;
+    width: 2px;
+    /* background-color: mat-color($primary, default-contrast); */
+  }
+
+  .userinfo-container {
+    flex-direction: row;
+    padding: 0;
+  }
+}

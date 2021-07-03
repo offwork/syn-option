@@ -1,0 +1,21 @@
+<div class="sidebar_menu" [@onSideNavChange]="sidebarStatus | async">
+  <mat-nav-list class="menu-list">
+    <a mat-list-item routerLinkActive="active-list-item" title="Login">
+      <mat-icon color="primary" class="icon" [@iconAnimation]="sidebarStatus | async">input</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarStatus | async">Login</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLinkActive="active-list-item" routerLink="dashboard" title="Dashboard">
+      <mat-icon color="primary" class="icon" [@iconAnimation]="sidebarStatus | async">dashboard</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarStatus | async">Dashboard</span>
+    </a>
+    <a mat-list-item routerLinkActive="active-list-item" title="Work">
+      <mat-icon color="primary" class="icon" [@iconAnimation]="sidebarStatus | async">work</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarStatus | async">Work</span>
+    </a>
+    <a mat-list-item routerLinkActive="active-list-item" title="Feedback">
+      <mat-icon color="primary" class="icon" [@iconAnimation]="sidebarStatus | async">feedback</mat-icon>
+      <span class="label" [@labelAnimation]="sidebarStatus | async">Feedback</span>
+    </a>
+  </mat-nav-list>
+</div>

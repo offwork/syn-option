@@ -1,0 +1,16 @@
+<mat-toolbar [color]="color" role="heading" aria-level="1">
+  <button
+    class="mat-icon-button menu-icon"
+    mat-icon-button
+    (click)="toggleMenu()">
+    <mat-icon class="mat-icon material-icon" role="img" aria-hidden="true">menu</mat-icon>
+  </button>
+
+  <a [routerLink]="redirectUrl" title="{{ tooltip }}">
+    <img src="{{ logo }}"  class="app-logo" />
+  </a>
+
+  <h2>{{ title }}</h2>
+
+  <ng-content></ng-content>
+</mat-toolbar>

@@ -1,0 +1,16 @@
+<syn-header
+  [title]="title"
+  [redirectUrl]="redirectUrl"
+  [tooltip]="tooltip"
+  [color]="color"
+  (clicked)="toggleMenu($event)"></syn-header>
+<mat-drawer-container class="draw-container" hasBackdrop="false">
+  <mat-drawer #drawer mode="side" opened="true" [style.min-width.px]="'60'" autosize>
+    <syn-sidebar [sidebarStatus]="sidebarStatus$"></syn-sidebar>
+  </mat-drawer>
+  <mat-drawer-content [@onSideNavChange]="sidebarStatus$ | async">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+  
+
