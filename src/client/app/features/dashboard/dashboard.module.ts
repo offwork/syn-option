@@ -5,7 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
 import { StockCardModule } from '../../shared/stock-card/stock-card.module';
 import { DashboardComponent } from './components/dashboard.component';
-import { StocksService } from './services/stocks.service';
+import { SocketService } from './services/socket.service';
 
 
 const routes: Routes = [
@@ -24,6 +24,6 @@ const routes: Routes = [
     StockCardModule,
     RouterModule.forChild(routes)
   ],
-  providers: [ StocksService ]
+  providers: [ SocketService ]
 })
 export class DashboardModule { }

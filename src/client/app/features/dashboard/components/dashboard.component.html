@@ -1,9 +1,9 @@
-<div class="card-container" fxLayout="row wrap" fxLayoutAlign=" center">
-  <div *ngFor="let quote of quotes$ | async">
+<div class="card-container" fxLayout="row wrap" fxLayoutAlign=" center" *ngIf="(quotes$ | async) as quotes">
+  <div *ngFor="let quote of quotes; trackBy: trackById">
     <syn-card fxFlex
       [symbol]="quote.symbol"
-      [currency]="quote.currency"
-      [regularMarketPrice]="quote.regularMarketPrice"
-      [regularMarketTime]="quote.regularMarketTime"></syn-card>
+      [change]="quote.change"
+      [stockName]="quote.name"
+      [regularMarketPrice]="quote.price"></syn-card>
   </div>
 </div>
